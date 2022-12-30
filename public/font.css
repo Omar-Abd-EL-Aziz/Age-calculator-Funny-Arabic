@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@600;700;800&display=swap');
+
+body {
+  font-family: 'Noto Kufi Arabic', sans-serif;
+  font-weight: bold;
+  background-image: url('image.jpg');
+  background-size: cover;
+}
+label {
+  font-weight: bolder;
+  color: #000;
+  background-color: rgb(0, 183, 255);
+}
+
+input,
+label {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+footer {
+  font-weight: bolder;
+}

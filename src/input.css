@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Noto Kufi Arabic', sans-serif;
+  direction: rtl;
+  overflow: hidden;
+}
+
+input {
+  padding: 5px 10px;
+  border-radius: 6px;
+  color: #333;
+  font-weight: bold;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 900, 'GRAD' 0, 'opsz' 48;
+}
+
+label {
+  animation: color 10s linear infinite both;
+  padding: 5px;
+  font-family: 'Noto Kufi Arabic', sans-serif;
+  font-weight: bold !important;
+}
+
+button {
+  animation: bounce 3s infinite;
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+footer,
+header {
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+@media (width > 768px) {
+  footer {
+    transform: translateX(-5%);
+  }
+}
+
+.score {
+  display: none;
+
+  transform: translate(0%, 72%);
+}
+
+#days span,
+#hours span {
+  font-weight: bold;
+  font-size: 20px;
+  color: #008dff;
+}
+
+.error {
+  display: none;
+  color: #fff;
+  transition: all 0.4s;
+}
