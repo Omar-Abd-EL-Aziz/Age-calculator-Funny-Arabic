@@ -4,11 +4,12 @@
 
 html {
   scroll-behavior: smooth;
+  min-height: 100vh;
 }
 body {
   font-family: 'Noto Kufi Arabic', sans-serif;
   direction: rtl;
-  overflow: hidden;
+  min-height: 100vh;
 }
 
 input {

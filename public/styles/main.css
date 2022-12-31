@@ -549,8 +549,8 @@ video {
   }
 }
 
-.absolute {
-  position: absolute;
+.fixed {
+  position: fixed;
 }
 
 .bottom-0 {
@@ -580,6 +580,10 @@ video {
 
 .mt-48 {
   margin-top: 12rem;
+}
+
+.mb-96 {
+  margin-bottom: 24rem;
 }
 
 .mb-3 {
@@ -710,12 +714,13 @@ video {
 
 html {
   scroll-behavior: smooth;
+  min-height: 100vh;
 }
 
 body {
   font-family: 'Noto Kufi Arabic', sans-serif;
   direction: rtl;
-  overflow: hidden;
+  min-height: 100vh;
 }
 
 input {
